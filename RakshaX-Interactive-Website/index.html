@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0b14">
+  <meta name="description" content="Explore RakshaX, a personal emergency safety assistant concept, its features, app screens, and technical approach.">
+  <title>RakshaX — Always Ready, Always Protected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow glow-a"></div><div class="bg-glow glow-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="RakshaX home">
+      <span class="brand-symbol" aria-hidden="true">R<span>X</span></span>
+      <span class="brand-copy">Raksha<span>X</span><small>ALWAYS READY, ALWAYS PROTECTED</small></span>
+    </a>
+    <button id="menuButton" class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#about">About</a><a href="#features">Features</a><a href="#screens">App screens</a><a href="#technology">Technology</a>
+      <button id="themeButton" class="theme-button" type="button" aria-label="Switch color theme">☼ <span>Light mode</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-text">
+        <div class="eyebrow"><i></i> PERSONAL EMERGENCY SAFETY ASSISTANT</div>
+        <h1>Safety should be<br><em>within reach.</em></h1>
+        <p class="lead">A personal safety companion designed to bring emergency actions, trusted contacts, and location-aware tools into one mobile experience.</p>
+        <div class="actions"><a class="button primary" href="#screens">Explore the app <span>↗</span></a><a class="button secondary" href="#about">Discover RakshaX</a></div>
+        <div class="trust-note"><span class="spark">✦</span><p><strong>Designed around people.</strong><small>Clear, accessible actions for moments that matter.</small></p></div>
+      </div>
+      <div class="hero-art" aria-label="RakshaX safety illustration">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <picture class="hero-picture">
+          <source id="heroSource" srcset="assets/banners/safer-tomorrow-dark.png">
+          <img id="heroBanner" src="assets/banners/safer-tomorrow-dark.png" alt="A person looking toward a city with the message A safer tomorrow starts with you">
+        </picture>
+        <div class="art-badge badge-top"><span class="badge-icon danger">SOS</span><span><b>Emergency access</b><small>Keep help within reach</small></span><i class="live-dot"></i></div>
+        <div class="art-badge badge-bottom"><span class="badge-icon violet">⌖</span><span><b>Trusted connections</b><small>Contacts and location tools</small></span></div>
+      </div>
+    </section>
+
+    <section class="ticker wrap" aria-label="Project principles"><span>PROJECT PRINCIPLES</span><b><i>01</i> Quick access</b><b><i>02</i> Trusted contacts</b><b><i>03</i> Location awareness</b><b><i>04</i> Privacy-minded design</b></section>
+
+    <section class="section wrap about-grid" id="about">
+      <div><div class="eyebrow">THE PROBLEM</div><h2>In a stressful moment,<br><em>clarity matters.</em></h2></div>
+      <div class="about-copy"><p>When a person feels unsafe, locating a trusted contact, communicating their situation, and sharing useful location information can take time. RakshaX explores a more unified way to reach personal-safety tools from a mobile device.</p><p class="subtle">The goal is to make key actions easier to find, understand, and access when they are needed.</p></div>
+    </section>
+
+    <section class="section wrap" id="features">
+      <div class="section-head"><div><div class="eyebrow">WHAT RAKSHAX BRINGS TOGETHER</div><h2>One place for<br><em>important actions.</em></h2></div><p>Explore the key capabilities represented in the current project screens.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon red">SOS</span><div><h3>Emergency SOS</h3><p>A central emergency entry point designed for quick access.</p></div><span class="arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-icon purple">⌖</span><div><h3>Emergency contacts</h3><p>Manage trusted people and available communication actions.</p></div><span class="arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-icon blue">◎</span><div><h3>Location awareness</h3><p>Location-related tools designed around user permission and consent.</p></div><span class="arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-icon green">◉</span><div><h3>Jarvis voice assistant</h3><p>A voice-assistance concept for supported app interactions.</p></div><span class="arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-icon orange">✓</span><div><h3>Account security</h3><p>Login, account creation, and verification screens.</p></div><span class="arrow">↗</span></article>
+        <article class="feature-card"><span class="feature-icon pink">◐</span><div><h3>Light and dark themes</h3><p>Theme choices for different viewing preferences and environments.</p></div><span class="arrow">↗</span></article>
+      </div>
+      <p class="notice">Feature descriptions should be checked against the final working build. Emergency functionality depends on permissions, device settings, connectivity, and testing.</p>
+    </section>
+
+    <section class="section wrap gallery-section" id="screens">
+      <div class="section-head"><div><div class="eyebrow">INSIDE THE MOBILE APP</div><h2>Explore the <em>screens.</em></h2></div><p>Switch themes, filter the screen collection, and select any image to view it larger.</p></div>
+      <div class="gallery-controls">
+        <div class="filter-group" role="group" aria-label="Filter screenshots">
+          <button class="filter active" data-filter="all">All screens</button>
+          <button class="filter" data-filter="light">Light mode</button>
+          <button class="filter" data-filter="dark">Dark mode</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="searchScreens" type="search" placeholder="Search screens..." aria-label="Search app screenshots"></label>
+      </div>
+      <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+      <p id="galleryCount" class="gallery-count"></p>
+    </section>
+
+    <section class="section wrap banner-section">
+      <div class="section-head"><div><div class="eyebrow">THE RAKSHAX MESSAGE</div><h2>A safer tomorrow<br><em>starts with you.</em></h2></div><p>The welcome illustrations reflect the same safety-first message in both themes.</p></div>
+      <div class="banner-pair">
+        <button class="banner-card" data-image="assets/banners/safer-tomorrow-light.png" data-title="Welcome illustration — Light mode"><img src="assets/banners/safer-tomorrow-light.png" alt="Light illustration showing a young woman with a phone and the message A safer tomorrow starts with you"><span>LIGHT MODE <b>View illustration ↗</b></span></button>
+        <button class="banner-card" data-image="assets/banners/safer-tomorrow-dark.png" data-title="Welcome illustration — Dark mode"><img src="assets/banners/safer-tomorrow-dark.png" alt="Dark illustration showing a young man looking toward a city and the message A safer tomorrow starts with you"><span>DARK MODE <b>View illustration ↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="section wrap tech-section" id="technology">
+      <div class="tech-copy"><div class="eyebrow">PROJECT OVERVIEW</div><h2>Built for a<br><em>mobile-first world.</em></h2><p>RakshaX brings together a mobile interface and device-aware safety workflows. Use this section to explain the actual frameworks, APIs, permissions, and data flows used in your submitted build.</p><div class="stack-tags"><span>Android</span><span>Location permissions</span><span>Contact workflows</span><span>Accessibility</span></div></div>
+      <div class="architecture">
+        <div class="architecture-head"><span class="window-dots"><i></i><i></i><i></i></span> RAKSHAX / CONCEPTUAL FLOW</div>
+        <div class="arch-node"><span>01</span><div><b>Mobile application</b><small>Navigation · screens · theme</small></div></div><div class="connector"></div>
+        <div class="arch-node"><span>02</span><div><b>Device capabilities</b><small>Permissions · location · communication</small></div></div><div class="connector"></div>
+        <div class="arch-node"><span>03</span><div><b>Safety workflows</b><small>Emergency contacts · user actions</small></div></div>
+        <p class="architecture-note">Conceptual overview — update to match your final implementation.</p>
+      </div>
+    </section>
+
+    <section class="section wrap impact-section" id="impact">
+      <div class="impact-panel"><div class="eyebrow">WHY IT MATTERS</div><h2>Technology with<br><em>a human purpose.</em></h2><p>RakshaX aims to make personal-safety tools more approachable and easier to navigate.</p></div>
+      <div class="impact-list"><article><span>01</span><div><h3>Human-centred design</h3><p>Prioritizes clear, accessible actions.</p></div></article><article><span>02</span><div><h3>Privacy-aware choices</h3><p>Location and contact access should be transparent and permission-based.</p></div></article><article><span>03</span><div><h3>Continuous improvement</h3><p>Future work can focus on reliability, accessibility, testing, and responsible emergency workflows.</p></div></article></div>
+    </section>
+    <section class="section wrap closing"><div class="eyebrow">SEVA FIRST INNOVATION CHALLENGE</div><h2>Always ready.<br><em>Always protected.</em></h2><p>RakshaX · Personal emergency safety assistant</p><a class="button primary" href="#home">Back to top ↑</a></section>
+  </main>
+
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-symbol">R<span>X</span></span><span class="brand-copy">Raksha<span>X</span><small>ALWAYS READY, ALWAYS PROTECTED</small></span></a><p>Project showcase · Seva First Innovation Challenge</p><a href="#home">Back to top ↑</a></footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button id="closeLightbox" class="lightbox-close" aria-label="Close image viewer">×</button>
+    <button id="prevImage" class="lightbox-nav prev" aria-label="Previous image">‹</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+    <button id="nextImage" class="lightbox-nav next" aria-label="Next image">›</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+[
+  {
+    "src": "assets/screenshots/light/Privacy2-Light-_.jpg",
+    "title": "Privacy2",
+    "theme": "light",
+    "filename": "Privacy2-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Add_contact-Light-_.jpg",
+    "title": "Add contact",
+    "theme": "light",
+    "filename": "Add_contact-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Contact-Dark-_.jpg",
+    "title": "Contact",
+    "theme": "dark",
+    "filename": "Contact-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Login-Light-_.jpg",
+    "title": "Login",
+    "theme": "light",
+    "filename": "Login-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Home-Light-_.jpg",
+    "title": "Home",
+    "theme": "light",
+    "filename": "Home-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Add_contact-Dark-_.jpg",
+    "title": "Add contact",
+    "theme": "dark",
+    "filename": "Add_contact-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Login-Dark-_.jpg",
+    "title": "Login",
+    "theme": "dark",
+    "filename": "Login-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Help2-Light-_.jpg",
+    "title": "Help2",
+    "theme": "light",
+    "filename": "Help2-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Contact-Light-_.jpg",
+    "title": "Contact",
+    "theme": "light",
+    "filename": "Contact-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Privacy-Light-_.jpg",
+    "title": "Privacy",
+    "theme": "light",
+    "filename": "Privacy-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Dashboard-Light-_.jpg",
+    "title": "Dashboard",
+    "theme": "light",
+    "filename": "Dashboard-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Create_acc-Dark-_.jpg",
+    "title": "Create acc",
+    "theme": "dark",
+    "filename": "Create_acc-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Home-Dark-_.jpg",
+    "title": "Home",
+    "theme": "dark",
+    "filename": "Home-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Privacy2-Drak-_.jpg",
+    "title": "Privacy2",
+    "theme": "dark",
+    "filename": "Privacy2-Drak-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Help2-Dark-_.jpg",
+    "title": "Help2",
+    "theme": "dark",
+    "filename": "Help2-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Create_acc-Light-_.jpg",
+    "title": "Create acc",
+    "theme": "light",
+    "filename": "Create_acc-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Help3-Dark-_.jpg",
+    "title": "Help3",
+    "theme": "dark",
+    "filename": "Help3-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Help-Light-_.jpg",
+    "title": "Help",
+    "theme": "light",
+    "filename": "Help-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/light/Help3-Light-_.jpg",
+    "title": "Help3",
+    "theme": "light",
+    "filename": "Help3-Light-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Help-Dark-_.jpg",
+    "title": "Help",
+    "theme": "dark",
+    "filename": "Help-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Privacy-Dark-_.jpg",
+    "title": "Privacy",
+    "theme": "dark",
+    "filename": "Privacy-Dark-_.jpg"
+  },
+  {
+    "src": "assets/screenshots/dark/Dashboard-Dark-_.jpg",
+    "title": "Dashboard",
+    "theme": "dark",
+    "filename": "Dashboard-Dark-_.jpg"
+  }
+]

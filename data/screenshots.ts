@@ -1,0 +1,302 @@
+export interface ScreenshotItem {
+  id: string;
+  filename: string;
+  src: string;
+  title: string;
+  theme: 'dark' | 'light';
+  category: string;
+  badge: string;
+  summary: string;
+  description: string;
+  features: string[];
+  tags: string[];
+}
+
+export const screenshotsData: ScreenshotItem[] = [
+  {
+    id: "dashboard-dark",
+    filename: "Dashboard-Dark-_.jpg",
+    src: "/images/screenshots/dark/Dashboard-Dark-_.jpg",
+    title: "Emergency SOS Dashboard",
+    theme: "dark",
+    category: "Emergency SOS",
+    badge: "Core Feature",
+    summary: "Central SOS trigger button with Jarvis assistant status and quick contact access.",
+    description: "The command center of RakshaX featuring a high-visibility SOS trigger button, active voice-assistant status indicator, safety monitoring confirmation, and instant contact management shortcuts.",
+    features: ["One-tap Emergency SOS", "Jarvis Voice Assistant Status", "Safety System Active Monitoring", "Direct Contact Shortcuts"],
+    tags: ["sos", "dashboard", "jarvis", "emergency", "voice assistant"]
+  },
+  {
+    id: "dashboard-light",
+    filename: "Dashboard-Light-_.jpg",
+    src: "/images/screenshots/light/Dashboard-Light-_.jpg",
+    title: "Emergency SOS Dashboard",
+    theme: "light",
+    category: "Emergency SOS",
+    badge: "Core Feature",
+    summary: "Light mode emergency console with clear contrast and immediate SOS dispatch.",
+    description: "Crisp daytime view of the main safety hub, designed for optimal outdoor visibility when swift emergency response is essential.",
+    features: ["One-tap Emergency SOS", "High Daylight Contrast", "Jarvis Voice Assistant Indicator", "Emergency Contact Actions"],
+    tags: ["sos", "dashboard", "jarvis", "light mode", "emergency"]
+  },
+  {
+    id: "contact-dark",
+    filename: "Contact-Dark-_.jpg",
+    src: "/images/screenshots/dark/Contact-Dark-_.jpg",
+    title: "Emergency Contacts Directory",
+    theme: "dark",
+    category: "Contacts",
+    badge: "Trusted Circle",
+    summary: "Saved emergency contacts directory with phone and email alert targets.",
+    description: "Directory of trusted contacts who receive real-time location broadcasts, SMS notices, and periodic email updates during an emergency.",
+    features: ["Contact Search", "SMS & Email Linking", "Edit & Delete Options", "Quick Navigation"],
+    tags: ["contacts", "directory", "alert recipients", "trusted circle"]
+  },
+  {
+    id: "contact-light",
+    filename: "Contact-Light-_.jpg",
+    src: "/images/screenshots/light/Contact-Light-_.jpg",
+    title: "Emergency Contacts Directory",
+    theme: "light",
+    category: "Contacts",
+    badge: "Trusted Circle",
+    summary: "High-contrast contacts list ensuring critical details are instantly identifiable.",
+    description: "Clean light interface for managing family, guardians, and emergency responders who are alerted when SOS is triggered.",
+    features: ["Contact Search", "Clear Typography", "Emergency Communication Channels", "One-tap Management"],
+    tags: ["contacts", "directory", "light mode", "trusted circle"]
+  },
+  {
+    id: "add-contact-dark",
+    filename: "Add_contact-Dark-_.jpg",
+    src: "/images/screenshots/dark/Add_contact-Dark-_.jpg",
+    title: "Add Emergency Contact",
+    theme: "dark",
+    category: "Contacts",
+    badge: "Setup",
+    summary: "Add contact form capturing name, phone number, and email address.",
+    description: "Straightforward contact registration form ensuring all necessary dispatch coordinates (phone for SMS, email for location tracking) are captured accurately.",
+    features: ["Name, Phone & Email Fields", "Dual Channel Routing", "Form Validation", "Direct Persistence"],
+    tags: ["add contact", "setup", "form", "emergency contacts"]
+  },
+  {
+    id: "add-contact-light",
+    filename: "Add_contact-Light-_.jpg",
+    src: "/images/screenshots/light/Add_contact-Light-_.jpg",
+    title: "Add Emergency Contact",
+    theme: "light",
+    category: "Contacts",
+    badge: "Setup",
+    summary: "Light theme setup screen for quickly adding emergency responders.",
+    description: "Accessible daylight view of the contact enrollment form with clear visual boundaries and focused input states.",
+    features: ["Form Fields", "Daylight Legibility", "Quick Save Flow", "Contact Validation"],
+    tags: ["add contact", "light mode", "setup", "form"]
+  },
+  {
+    id: "home-dark",
+    filename: "Home-Dark-_.jpg",
+    src: "/images/screenshots/dark/Home-Dark-_.jpg",
+    title: "Welcome & Safety Gateway",
+    theme: "dark",
+    category: "Onboarding",
+    badge: "Gateway",
+    summary: "Welcome screen featuring RakshaX shield emblem and authentication choices.",
+    description: "Mobile application landing screen showcasing the official RakshaX shield logo, tagline 'ALWAYS READY, ALWAYS PROTECTED', and primary access buttons.",
+    features: ["Brand Shield Identity", "Login & Register Pathways", "Reassuring UX Message", "Modern Dark UI"],
+    tags: ["welcome", "gateway", "branding", "home"]
+  },
+  {
+    id: "home-light",
+    filename: "Home-Light-_.jpg",
+    src: "/images/screenshots/light/Home-Light-_.jpg",
+    title: "Welcome & Safety Gateway",
+    theme: "light",
+    category: "Onboarding",
+    badge: "Gateway",
+    summary: "Light aesthetic gateway screen greeting users with clarity and warmth.",
+    description: "Daylight presentation of the RakshaX entry portal, maintaining brand consistency across both light and dark display preferences.",
+    features: ["Light Brand Presentation", "Smooth Action Buttons", "Welcome Messaging", "Direct Sign-in"],
+    tags: ["welcome", "light mode", "branding", "home"]
+  },
+  {
+    id: "login-dark",
+    filename: "Login-Dark-_.jpg",
+    src: "/images/screenshots/dark/Login-Dark-_.jpg",
+    title: "User Authentication",
+    theme: "dark",
+    category: "Security",
+    badge: "Auth",
+    summary: "Secure credential login with remember-me and social authentication options.",
+    description: "User login screen with username and password entry, password reveal toggle, session retention checkbox, and social authentication options.",
+    features: ["Password Mask Toggle", "Remember Me Token", "Social Auth Options", "Forgot Password Flow"],
+    tags: ["login", "authentication", "security", "credentials"]
+  },
+  {
+    id: "login-light",
+    filename: "Login-Light-_.jpg",
+    src: "/images/screenshots/light/Login-Light-_.jpg",
+    title: "User Authentication",
+    theme: "light",
+    category: "Security",
+    badge: "Auth",
+    summary: "Light theme login portal ensuring secure and accessible account entry.",
+    description: "Polished authentication screen in light theme featuring clear form controls and high contrast for easy typing in bright light.",
+    features: ["Accessible Form Controls", "Secure Login", "Alternative Sign-in Methods", "Clean Typography"],
+    tags: ["login", "light mode", "authentication", "security"]
+  },
+  {
+    id: "create-acc-dark",
+    filename: "Create_acc-Dark-_.jpg",
+    src: "/images/screenshots/dark/Create_acc-Dark-_.jpg",
+    title: "Account Creation & OTP Verification",
+    theme: "dark",
+    category: "Security",
+    badge: "Auth",
+    summary: "Registration flow with email OTP verification and privacy agreement.",
+    description: "User registration workflow capturing username, email, password confirmation, legal terms agreement, and Send OTP email verification trigger.",
+    features: ["Email OTP Verification", "Password Confirmation", "Terms & Privacy Consent", "Direct Link to Login"],
+    tags: ["register", "create account", "otp", "verification", "security"]
+  },
+  {
+    id: "create-acc-light",
+    filename: "Create_acc-Light-_.jpg",
+    src: "/images/screenshots/light/Create_acc-Light-_.jpg",
+    title: "Account Creation & OTP Verification",
+    theme: "light",
+    category: "Security",
+    badge: "Auth",
+    summary: "Registration interface in light theme with step-by-step security validation.",
+    description: "Accessible account onboarding flow with real-time field validation, password security feedback, and email verification dispatch.",
+    features: ["Email Verification Flow", "Password Security", "Legal Consent Checkbox", "Smooth Transitions"],
+    tags: ["register", "create account", "otp", "light mode"]
+  },
+  {
+    id: "help-dark",
+    filename: "Help-Dark-_.jpg",
+    src: "/images/screenshots/dark/Help-Dark-_.jpg",
+    title: "Help & App Attribution",
+    theme: "dark",
+    category: "Help & Support",
+    badge: "Governance",
+    summary: "App overview, SMS/Email SOS explanation, and developer Rishi Upadhyay attribution.",
+    description: "Official Help & About screen clarifying how the single-tap SOS sends live location via SMS and Email to saved contacts, and crediting Android Developer Rishi Upadhyay.",
+    features: ["SOS Mechanics Breakdown", "Developer Credit (Rishi Upadhyay)", "Privacy & Policy Snapshot", "Location Protocol Details"],
+    tags: ["help", "about", "developer", "rishi upadhyay", "live location"]
+  },
+  {
+    id: "help-light",
+    filename: "Help-Light-_.jpg",
+    src: "/images/screenshots/light/Help-Light-_.jpg",
+    title: "Help & App Attribution",
+    theme: "light",
+    category: "Help & Support",
+    badge: "Governance",
+    summary: "Light theme help view detailing emergency workflow and development credits.",
+    description: "Comprehensive help screen with transparent disclosure of how emergency data flows from device to contacts.",
+    features: ["Clear Help Breakdown", "Attribution Details", "Emergency Procedures", "Privacy Transparency"],
+    tags: ["help", "about", "light mode", "rishi upadhyay"]
+  },
+  {
+    id: "help2-dark",
+    filename: "Help2-Dark-_.jpg",
+    src: "/images/screenshots/dark/Help2-Dark-_.jpg",
+    title: "3-Step Emergency Guide",
+    theme: "dark",
+    category: "Help & Support",
+    badge: "Guide",
+    summary: "How-to guide: 1. Add contacts, 2. Press SOS, 3. Contacts receive SMS & Email with location.",
+    description: "Step-by-step user onboarding guide outlining the core workflow: 1. Add emergency contacts, 2. Press SOS in emergency, 3. Contacts receive SMS & Email with real-time location coordinates.",
+    features: ["3-Step Visual Guide", "Real-time Location Highlights", "Dual SMS & Email Broadcast", "Emergency System Specs"],
+    tags: ["guide", "how to use", "steps", "workflow"]
+  },
+  {
+    id: "help2-light",
+    filename: "Help2-Light-_.jpg",
+    src: "/images/screenshots/light/Help2-Light-_.jpg",
+    title: "3-Step Emergency Guide",
+    theme: "light",
+    category: "Help & Support",
+    badge: "Guide",
+    summary: "Step-by-step user instructions displayed in clear light mode typography.",
+    description: "Intuitive breakdown of emergency readiness steps ensuring users know exactly what happens during an SOS event.",
+    features: ["3-Step Workflow", "Accessible Typography", "Feature Overview", "Location Protocol"],
+    tags: ["guide", "how to use", "light mode", "workflow"]
+  },
+  {
+    id: "help3-dark",
+    filename: "Help3-Dark-_.jpg",
+    src: "/images/screenshots/dark/Help3-Dark-_.jpg",
+    title: "Help Navigation Menu",
+    theme: "dark",
+    category: "Help & Support",
+    badge: "Menu",
+    summary: "Index of help categories: Purpose, How to Use, Features, About, Developer, Privacy.",
+    description: "Clean topic index providing instant access to specific help topics including Purpose, How to Use, Features, About the App, Developer info, and Privacy Policy.",
+    features: ["Categorized Index", "One-touch Topic Jump", "Streamlined UI", "Consistent Layout"],
+    tags: ["help menu", "navigation", "topics", "support"]
+  },
+  {
+    id: "help3-light",
+    filename: "Help3-Light-_.jpg",
+    src: "/images/screenshots/light/Help3-Light-_.jpg",
+    title: "Help Navigation Menu",
+    theme: "light",
+    category: "Help & Support",
+    badge: "Menu",
+    summary: "Light mode index for rapid browsing of support documentation.",
+    description: "High-legibility help directory allowing users to easily find safety instructions and technical policies.",
+    features: ["Topic Listing", "High Contrast", "Intuitive Navigation", "Clean Card Design"],
+    tags: ["help menu", "light mode", "support", "navigation"]
+  },
+  {
+    id: "privacy-dark",
+    filename: "Privacy-Dark-_.jpg",
+    src: "/images/screenshots/dark/Privacy-Dark-_.jpg",
+    title: "Permissions & Privacy Policy",
+    theme: "dark",
+    category: "Privacy",
+    badge: "Policy",
+    summary: "Details: Location strictly for SOS, SMS for alerts, background updates every 15-20 min.",
+    description: "Detailed privacy screen explicitly stating: Location is accessed ONLY during SOS, SMS used strictly for alerts, zero third-party sharing, and background email updates sent every 15-20 minutes during active emergencies.",
+    features: ["Location strictly during SOS", "SMS for Emergency Alerts", "Contacts used for saving numbers", "Background updates every 15-20 min"],
+    tags: ["privacy", "permissions", "data protection", "location policy", "background alerts"]
+  },
+  {
+    id: "privacy-light",
+    filename: "Privacy-Light-_.jpg",
+    src: "/images/screenshots/light/Privacy-Light-_.jpg",
+    title: "Permissions & Privacy Policy",
+    theme: "light",
+    category: "Privacy",
+    badge: "Policy",
+    summary: "Transparent privacy policy and permission boundaries presented in light mode.",
+    description: "Daylight view of the privacy commitment, emphasizing user data ownership, minimal data collection, and non-commercial safety usage.",
+    features: ["Transparent Permissions", "Data Protection Guarantee", "SOS-specific Location Use", "Periodic Update Schedule"],
+    tags: ["privacy", "permissions", "light mode", "data policy"]
+  },
+  {
+    id: "privacy2-dark",
+    filename: "Privacy2-Drak-_.jpg",
+    src: "/images/screenshots/dark/Privacy2-Drak-_.jpg",
+    title: "Privacy Topics Directory",
+    theme: "dark",
+    category: "Privacy",
+    badge: "Policy",
+    summary: "Directory of privacy topics: Collection, Usage, Security, Permissions, Background.",
+    description: "Modular directory allowing users to inspect individual policy domains: Information We Collect, How We Use It, Security standards, Permissions, and Background Alerts.",
+    features: ["Categorized Policy Sections", "Security Disclosure", "Granular Permissions", "Background Alerts Overview"],
+    tags: ["privacy directory", "topics", "governance", "security"]
+  },
+  {
+    id: "privacy2-light",
+    filename: "Privacy2-Light-_.jpg",
+    src: "/images/screenshots/light/Privacy2-Light-_.jpg",
+    title: "Privacy Topics Directory",
+    theme: "light",
+    category: "Privacy",
+    badge: "Policy",
+    summary: "Light theme privacy topic index with accessible touch targets.",
+    description: "Clear list of privacy sections providing confidence and transparency before requesting sensitive Android permissions.",
+    features: ["Structured Categories", "Clear Policy Navigation", "Transparent Standards"],
+    tags: ["privacy directory", "light mode", "security", "governance"]
+  }
+];
