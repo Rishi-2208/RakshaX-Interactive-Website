@@ -71,7 +71,7 @@ export function Navbar() {
               style={{ objectFit: 'contain' }}
             />
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0 }}>
             <span
               style={{
                 fontFamily: 'Space Grotesk, sans-serif',
@@ -85,6 +85,7 @@ export function Navbar() {
               Raksha<span style={{ color: 'var(--accent-red)' }}>X</span>
             </span>
             <span
+              className="brand-tagline"
               style={{
                 fontFamily: 'DM Sans, sans-serif',
                 fontSize: '0.62rem',
@@ -265,7 +266,17 @@ export function Navbar() {
           font-size: 1.05rem;
           font-weight: 600;
           color: var(--text-primary);
-          padding: 6px 0;
+          padding: 10px 0;
+        }
+        .mobile-drawer {
+          max-height: calc(100dvh - var(--nav-height));
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        @media (max-width: 520px) {
+          .brand-tagline {
+            display: none;
+          }
         }
       `}</style>
     </header>

@@ -74,7 +74,7 @@ export function Hero() {
             </p>
 
             {/* Action Buttons */}
-            <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '40px' }}>
+            <div className="hero-cta" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '40px' }}>
               <a href="#screens" className="btn btn-primary">
                 Explore App Screens
                 <ArrowUpRight size={18} />
@@ -198,6 +198,7 @@ export function Hero() {
           align-items: center;
           gap: 40px;
           min-height: calc(100vh - var(--nav-height) - 100px);
+          min-height: calc(100dvh - var(--nav-height) - 100px);
         }
         .hero-content {
           max-width: 620px;
@@ -385,7 +386,12 @@ export function Hero() {
           .hero-grid {
             grid-template-columns: 1fr;
             text-align: center;
-            gap: 50px;
+            gap: 40px;
+            min-height: 0;
+          }
+          .hero-visual {
+            min-height: 0;
+            padding: 30px 0 40px;
           }
           .hero-content {
             max-width: 100%;
@@ -414,19 +420,50 @@ export function Hero() {
 
         @media (max-width: 640px) {
           .phone-device-wrap {
-            width: 250px;
+            width: min(250px, 68vw);
           }
           .floating-badge {
-            padding: 8px 12px;
+            padding: 8px 10px;
             gap: 8px;
+            max-width: 46vw;
+          }
+          .floating-badge .badge-icon-box {
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
           }
           .badge-top-right {
-            right: -5px;
-            top: 5px;
+            right: 0;
+            top: 0;
           }
           .badge-bottom-left {
-            left: -5px;
-            bottom: 10px;
+            left: 0;
+            bottom: 0;
+          }
+          .hero-highlights {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 14px;
+            width: 100%;
+          }
+        }
+        @media (max-width: 980px) {
+          .hero-cta {
+            justify-content: center;
+          }
+        }
+        @media (max-width: 480px) {
+          .hero-cta {
+            flex-direction: column;
+            width: 100%;
+          }
+          .hero-cta :global(.btn) {
+            width: 100%;
+          }
+        }
+        @media (max-width: 380px) {
+          .floating-badge {
+            display: none;
           }
         }
       `}</style>

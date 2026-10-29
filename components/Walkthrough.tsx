@@ -229,6 +229,12 @@ export function Walkthrough() {
         .walkthrough-stage {
           padding: 40px;
         }
+        .walkthrough-tabs-bar {
+          -webkit-overflow-scrolling: touch;
+        }
+        .step-tab-btn {
+          flex-shrink: 0;
+        }
         .walkthrough-grid {
           display: grid;
           grid-template-columns: 1.2fr 0.8fr;
@@ -391,6 +397,22 @@ export function Walkthrough() {
           }
           .walkthrough-phone-frame {
             width: 230px;
+          }
+        }
+        @media (max-width: 480px) {
+          .walkthrough-stage {
+            padding: 16px;
+          }
+          .walkthrough-phone-frame {
+            width: min(220px, 62vw);
+          }
+          .walkthrough-tabs-bar {
+            margin-inline: -4px;
+            padding-inline: 4px;
+          }
+          .step-tab-btn {
+            padding: 9px 12px;
+            font-size: 0.8rem;
           }
         }
       `}</style>

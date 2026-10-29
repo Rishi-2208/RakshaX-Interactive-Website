@@ -26,7 +26,7 @@ export function Footer() {
               &quot;A safer tomorrow starts with you.&quot; <br />
               RakshaX stands as a dedicated personal emergency safety assistant designed to bring swift, life-saving clarity to moments of crisis.
             </p>
-            <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <div className="cta-buttons" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <a href="#screens" className="btn btn-primary">
                 Browse App Screens
               </a>
@@ -205,6 +205,28 @@ export function Footer() {
           }
           .footer-links-group {
             gap: 30px;
+          }
+        }
+        @media (max-width: 480px) {
+          .cta-buttons {
+            flex-direction: column;
+          }
+          .cta-buttons :global(.btn) {
+            width: 100%;
+          }
+          .cta-banner {
+            padding: 32px 16px;
+            margin-bottom: 48px;
+          }
+          .footer-links-group {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            width: 100%;
+          }
+          .footer-bottom-bar {
+            flex-direction: column;
+            align-items: flex-start;
           }
         }
       `}</style>

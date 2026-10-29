@@ -693,6 +693,7 @@ export function Gallery() {
           max-width: 900px;
           width: 100%;
           max-height: 88vh;
+          max-height: 88dvh;
           overflow: hidden;
           background: var(--bg-surface);
           border: 1px solid var(--border-bright);
@@ -707,6 +708,7 @@ export function Gallery() {
         }
         :global(.lightbox-main-img) {
           max-height: 74vh !important;
+          max-height: 74dvh !important;
           width: auto !important;
           object-fit: contain !important;
           border-radius: var(--radius-md);
@@ -767,6 +769,7 @@ export function Gallery() {
           .lightbox-content-box {
             grid-template-columns: 1fr;
             max-height: 92vh;
+            max-height: 92dvh;
             overflow-y: auto;
           }
           .lightbox-image-side {
@@ -791,7 +794,36 @@ export function Gallery() {
         }
         @media (max-width: 500px) {
           .gallery-grid {
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+          }
+          .controls-panel {
+            padding: 12px;
+          }
+          .search-wrapper {
+            min-width: 0;
+            max-width: none;
+            width: 100%;
+          }
+          .filter-pill-group,
+          .category-chips-row {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding-bottom: 6px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+          }
+          .filter-pill-group::-webkit-scrollbar,
+          .category-chips-row::-webkit-scrollbar {
+            display: none;
+          }
+          .pill-btn,
+          .cat-chip {
+            white-space: nowrap;
+            flex-shrink: 0;
+          }
+          .lightbox-info-side h3 {
+            font-size: 1.2rem;
           }
         }
       `}</style>
